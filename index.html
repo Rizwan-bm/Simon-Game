@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game | Memory Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <h1>SIMON GAME</h1>
+        <p class="subtitle">Test your memory. Follow the pattern!</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span>LEVEL</span>
+                <strong id="level">0</strong>
+            </div>
+            <div class="stat-box">
+                <span>BEST SCORE</span>
+                <strong id="best">0</strong>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <button class="color-btn green" data-color="green"
+                aria-label="Green button"></button>
+            <button class="color-btn red" data-color="red"
+                aria-label="Red button"></button>
+            <button class="color-btn yellow" data-color="yellow"
+                aria-label="Yellow button"></button>
+            <button class="color-btn blue" data-color="blue"
+                aria-label="Blue button"></button>
+
+            <div class="center-circle">
+                <span>SIMON</span>
+                <small>MEMORY GAME</small>
+            </div>
+        </div>
+
+        <p id="message" class="message">Press START to play!</p>
+        <button id="start-btn" class="start-btn">START GAME</button>
+        <p class="instructions">
+            Watch the sequence carefully and repeat it.
+            Each level adds one more color!
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
